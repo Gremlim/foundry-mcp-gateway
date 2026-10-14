@@ -107,7 +107,7 @@ pub async fn authenticate(
     let url = format!("{http_s}://{host}{base}/join");
     let payload = serde_json::json!({
         "action": "join",
-        "userid": cred.userid,
+        "userId": cred.userid,
         "password": cred.password,
     });
     let resp = http
